@@ -9,20 +9,20 @@ import NotFoundPage from './components/pages/NotFoundPage';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
     <Navbar />
-    <Switch>
+    <Routes>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/resume" component={Resume} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFoundPage} />
-    </Switch>
+    </Routes>
     <Footer />
     </div>
   );
