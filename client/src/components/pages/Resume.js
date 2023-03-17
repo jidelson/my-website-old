@@ -1,5 +1,4 @@
 import React from 'react';
-import rez from '../../images/rez.pdf';
 import styled from 'styled-components';
 
 function Resume() {

@@ -9,7 +9,7 @@ function Footer() {
                     <div className="row">
                         <div className="col-md-12">
                             <ul className="list-inline">
-                                <li className="list-inline-item"><a href="/">Home</a><i class="fas fa-home"></i></li>
+                                <li className="list-inline-item"><a href="/">Home</a><i className="fas fa-home"></i></li>
                                 <li className="list-inline-item"><a href="/about">About</a></li>
                                 <li className="list-inline-item"><a href="/portfolio">Portfolio</a></li>
                                 <li className="list-inline-item"><a href="/resume">Resume</a></li>
@@ -23,9 +23,9 @@ function Footer() {
                     <div className="col-md-12">
                         <div className="footer-social-icons py-4">
         	                <ul>
-		                        <li><a href="https://www.github.com/jidelson"><i className="fa fa-github" aria-hidden="true"></i></a></li>
-		                        <li><a href="https://www.linkedin.com/in/joe-idelson/"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
-				                <li><a href="https://joeidelson.medium.com/"><i className="fa fa-medium" aria-hidden="true"></i></a></li>
+		                        <li><a href="https://www.github.com/jidelson"><i className="fa fa-github" aria-hidden="true"></i>Github</a></li>
+		                        <li><a href="https://www.linkedin.com/in/joe-idelson/"><i className="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
+				                <li><a href="https://joeidelson.medium.com/"><i className="fa fa-medium" aria-hidden="true"></i>Medium</a></li>
 			                </ul>
 		                </div>
                     </div>

@@ -68,7 +68,7 @@ function About() {
                     </div>
                     <div className="col-lg-4 col-md-12">
                         <div className="py-4">
-                            <img src={wc} alt="walnutCreek-image" className="wc img-fluid" />
+                            <img src={wc} alt="walnutCreek" className="wc img-fluid" />
                         </div>
                     </div>
                 </div>

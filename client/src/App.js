@@ -9,21 +9,23 @@ import NotFoundPage from './components/pages/NotFoundPage';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-    <Navbar />
-    <Routes>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/portfolio" component={Portfolio} />
-      <Route path="/resume" component={Resume} />
-      <Route path="/contact" component={Contact} />
-      <Route component={NotFoundPage} />
-    </Routes>
-    <Footer />
+      <Navbar />
+      <Router basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route element={<NotFoundPage />} />
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }

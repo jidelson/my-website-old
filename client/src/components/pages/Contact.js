@@ -49,13 +49,10 @@ function Contact() {
 
                 
                 <div className="bottomInfo text-center py-4">
-                   <p><i class="fas fa-phone">&nbsp;<span className="phoneInfo">(925)478-1747</span></i></p> 
-                   <p> <i class="fas fa-envelope-square">&nbsp;<span className="emailInfo">joeidelson@gmail.com</span></i></p> 
+                   <p><i className="fas fa-phone">&nbsp;<span className="phoneInfo">(925)478-1747</span></i></p> 
+                   <p> <i className="fas fa-envelope-square">&nbsp;<span className="emailInfo">joeidelson@gmail.com</span></i></p> 
                 </div>
                
-
-
-
 
             </div>
         </ContactContainer>
