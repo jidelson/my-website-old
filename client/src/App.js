@@ -9,22 +9,20 @@ import NotFoundPage from './components/pages/NotFoundPage';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
-          <Route element={<NotFoundPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
-      </Router>
       <Footer />
     </div>
   );

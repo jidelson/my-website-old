@@ -42,7 +42,6 @@ function Home() {
                                 <div className="d-flex flex-row">
                                     <Link className="btn button primary-button mr-4 text-uppercase" to="/contact">Hire Me</Link>
                                     <Link className="btn button secondary-button text-uppercase" to="/resume">My Resume</Link>
-
                                 </div>
                             </div>
                         </div>
@@ -298,15 +297,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-
-              
             </div>
-
-
-
-		
-                
-            </HomeContainer>
+        </HomeContainer>
 
     )
 }
