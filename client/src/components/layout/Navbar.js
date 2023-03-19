@@ -26,7 +26,7 @@ function Navbar() {
           <ul className="navbar-nav m-auto">
             <li className="nav-item active">
               <Link className="nav-link text-uppercase ml-5" to="/">
-                Home&nbsp;<i class="fas fa-home"></i> <span className="sr-only">(current)</span></Link>
+                Home&nbsp;<i className="fas fa-home"></i> <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link text-uppercase ml-5" to="/about">About</Link>

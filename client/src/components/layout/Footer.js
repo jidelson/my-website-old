@@ -23,9 +23,9 @@ function Footer() {
                     <div className="col-md-12">
                         <div className="footer-social-icons py-4">
         	                <ul>
-		                        <li><a href="https://www.github.com/jidelson"><i className="fa fa-github" aria-hidden="true"></i>Github</a></li>
-		                        <li><a href="https://www.linkedin.com/in/joe-idelson/"><i className="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
-				                <li><a href="https://joeidelson.medium.com/"><i className="fa fa-medium" aria-hidden="true"></i>Medium</a></li>
+		                        <li><a href="https://www.github.com/jidelson"><i className="fa fa-github" aria-hidden="true"></i><p>Github</p></a></li>
+		                        <li><a href="https://www.linkedin.com/in/joe-idelson/"><i className="fa fa-linkedin" aria-hidden="true"></i><p>LinkedIn</p></a></li>
+				                {/* <li><a href="https://joeidelson.medium.com/"><i className="fa fa-medium" aria-hidden="true"></i>Medium</a></li> */}
 			                </ul>
 		                </div>
                     </div>
@@ -33,7 +33,6 @@ function Footer() {
                 </div>
             
             </div>
-            
                     <div className="footer-bottom">
                         <p className="text-center mt-3 mb-0">
                             &copy;{new Date().getFullYear()} Joe Idelson - All Rights Reserved
@@ -78,7 +77,6 @@ ul li a:hover{
     padding: 0px;
     display: flex;
     position: absolute;
-    top: 40%;
     left: 49.5%;
     transform: translate(-50%);
     list-style-type: none;
@@ -127,6 +125,9 @@ ul li a:hover{
     color: #11999E;
     box-shadow: 0 0 5px #11999E;
     text-shadow: 0 0 5px #11999E;
+}
+.footer-social-icons p{
+    font-size: 0;
 }
 
 `;
