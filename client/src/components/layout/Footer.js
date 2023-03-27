@@ -29,9 +29,8 @@ function Footer() {
 			                </ul>
 		                </div>
                     </div>
-                
                 </div>
-            
+                
             </div>
                     <div className="footer-bottom">
                         <p className="text-center mt-3 mb-0">

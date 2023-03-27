@@ -3,10 +3,11 @@ import logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+
 function Navbar() {
   return (
     <NavContainer>
-      <nav className="navbar navbar-expand-lg bg-dark">
+      <nav className="navbar navbar-expand-lg">
         <Link to="/" className="navbar-brand">
             <img src={logo} alt="logo" style={{ width: "45px" }} />
         </Link>
@@ -22,23 +23,33 @@ function Navbar() {
             <i className="fas fa-bars" style={{color: '#fff'}}></i>
           </span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent"> 
-          <ul className="navbar-nav m-auto">
-            <li className="nav-item active">
-              <Link className="nav-link text-uppercase ml-5" to="/">
-                Home&nbsp;<i className="fas fa-home"></i> <span className="sr-only">(current)</span></Link>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mx-auto justify-content-between" style={{ width: "30%" }}>
+            <li className="nav-item">
+              <Link className="nav-link text-uppercase" to="/">
+                Home&nbsp;<i className="fas fa-home"></i>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-uppercase ml-5" to="/about">About</Link>
+              <Link className="nav-link text-uppercase" to="/about">
+                About
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-uppercase ml-5" to="/portfolio">Portfolio</Link>
+              <Link className="nav-link text-uppercase" to="/portfolio">
+                Portfolio
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-uppercase ml-5" to="/resume">Resume</Link>
+              <Link className="nav-link text-uppercase" to="/resume">
+                Resume
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-uppercase ml-5" to="/contact">Contact</Link>
+              <Link className="nav-link text-uppercase" to="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -52,14 +63,10 @@ export default Navbar;
 const NavContainer = styled.div`
 
 .nav-link{
-  color:white;
-  display: flex;
-  justify-content: space-between;
+  color: white;
 }
 
 .nav-link:hover{
-  /* color:rgba(172, 172, 172); */
   color: turquoise;
 }
-
-`
+`;

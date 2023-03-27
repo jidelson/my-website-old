@@ -11,6 +11,11 @@
   --roboto: 'Roboto', serif;
 }
 
+.navbar{
+  background-color: var(--mainDark);
+}
+
+
 .navbar-toggler:focus{
   outline: none;
 }
