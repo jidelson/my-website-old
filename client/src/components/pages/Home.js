@@ -51,7 +51,6 @@ function Home() {
 
             <div className="container-fluid">
                 <div className="aboutRow row">
-                    
                     <div className="col-lg-4 col-md-12">
                         <div>
                             <img src={about} alt="About me" className="about-image img-fluid" />
@@ -63,30 +62,24 @@ function Home() {
                             Let me introduce myself
                         </h2>
                         <div className="paragraph py-4">
-                        <p className="para">
-                            Hey there! I'm Joe Idelson, a full stack web developer.
-                            I live in the San Francisco Bay Area. Prior to coding, I recieved my Bachelor's in Applied Science for Animation and Visual Effects.
-                            I am hard working and passionate about my work. 
-                            I am always looking for ways to improve.
-                        </p>
-                        <p className="para">
-                            I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. 
-                            When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.
-                        </p>
-                    </div>
-                       
-                    </div>
-
-                    <div className="container-fluid">
-                    <div className="row">
-                    <div className="col-lg-5 col-md-12 pb-5">
-                           
+                            <p className="para">
+                                Hey there! I'm Joe Idelson, a full stack web developer.
+                                I am originally from the San Francisco Bay Area, and now reside in the Dallas-Fort Worth Metroplex. Prior to coding, I recieved my Bachelor's in Applied 
+                                Science for Animation and Visual Effects.
+                                I am hard working and passionate about my work and always looking for ways to improve myself and my skills. I enjoy solving new problems and finding solutions
+                                for any challenge I am faced with.    
+                            </p>
+                            <p className="para">
+                                I graduated from Lambda School (now called Bloom Institute of Technology), a nine month intensive boot-camp style school, where I was taught the most 
+                                contemporary techniques and skills for web development.
+                                After attending Lambda, I got additional training through a company called Revature.
+                            </p>
+                            <p className='para'>
+                                Currently, I am employed at Infosys and have gained new skills working primarily as a database administrator.
+                                When I am not working, I enjoy spending time with family and friends, and working on digital art projects.
+                            </p>
                         </div>
-                    
                     </div>
-                    </div>
-                   
-                    
                 </div>
             </div>
 
