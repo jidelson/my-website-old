@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import rez from '../../images/rez.pdf'
 
 function Resume() {
     return (
         <ResumeContainer className="text-center">
-            <a className="btn button primary-button mr-4 text-uppercase" href="https://drive.google.com/file/d/17F7QoJLItDouYDLbZDfQROixhDqa5TrY/view?usp=sharing">Resume</a>
+            <a className="btn button primary-button mr-4 text-uppercase" href="https://drive.google.com/file/d/1lelwX6Ur_MEuUdsKXa_UgIFRbqRukQ85/view?usp=share_link">View Resume</a>
+            <div className="rezDlBtn">
+                <a href={rez} download className="btn button primary-button text-uppercase">Download Resume</a>
+            </div>
         </ResumeContainer>
     )    
 

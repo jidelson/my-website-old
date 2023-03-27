@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import cartoon from '../../images/cartoon.png';
 import about from '../../images/about.png';
 
-import rez from '../../images/rez.pdf';
-
 import html from '../../images/html.png';
 import css from '../../images/css.png';
 import javascript from '../../images/javascript.png';
@@ -81,9 +79,7 @@ function Home() {
                     <div className="col-lg-5 col-md-12 pb-5">
                            
                         </div>
-                    <div className="rezDlBtn col-lg-7 col-md-12 pb-5">
-                            <a href={rez} download className="btn button primary-button text-uppercase">Download Resume</a>
-                        </div>
+                    
                     </div>
                     </div>
                    
