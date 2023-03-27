@@ -16,6 +16,9 @@ import sql from '../../images/sql.png';
 import git from '../../images/git.png';
 import heroku from '../../images/heroku.jpg';
 import postgresql from '../../images/postgresql.png';
+import aws from '../../images/aws.png';
+import java from '../../images/java.png';
+import linux from '../../images/linux.png';
 
 import vbb from '../../images/vbb.png';
 import cookbook from '../../images/cookbook.jpg';
@@ -95,7 +98,7 @@ function Home() {
                         <div className="skillsOne col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={html} alt="Skills-1" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={html} alt="HTML" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">HTML</h4>
@@ -105,7 +108,7 @@ function Home() {
                         <div className="skillsTwo col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={css} alt="Skills-2" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={css} alt="CSS" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">CSS</h4>
@@ -115,7 +118,7 @@ function Home() {
                         <div className="skillsThree col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={javascript} alt="Skills-3" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={javascript} alt="Javascript" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h5 className="card-title text-uppercase font-roboto">Javascript</h5>
@@ -125,7 +128,7 @@ function Home() {
                         <div className="skillsFour col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={react} alt="Skills-4" className="img-fluid rounded mx-auto d-block" />
+                                    <img src={react} alt="React" className="img-fluid rounded mx-auto d-block" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h5 className="card-title text-uppercase font-roboto">React</h5>
@@ -135,7 +138,7 @@ function Home() {
                         <div className="skillsFive col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={python} alt="Skills-5" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={python} alt="Python" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">Python</h4>
@@ -145,7 +148,7 @@ function Home() {
                         <div className="skillsSix col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={redux} alt="Skills-6" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={redux} alt="Redux" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">Redux</h4>
@@ -155,7 +158,7 @@ function Home() {
                         <div className="skillsSeven col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={node} alt="Skills-7" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={node} alt="Node" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">Node</h4>
@@ -165,7 +168,7 @@ function Home() {
                         <div className="skillsEight col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={express} alt="Skills-8" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={express} alt="Express" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">Express</h4>
@@ -175,7 +178,7 @@ function Home() {
                         <div className="skillsNine col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={sql} alt="Skills-9" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={sql} alt="SQLite" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">SQLite Studio</h4>
@@ -185,7 +188,7 @@ function Home() {
                         <div className="skillsTen col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={git} alt="Skills-10" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={git} alt="Git" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">Git</h4>
@@ -195,7 +198,7 @@ function Home() {
                         <div className="skillsEleven col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={heroku} alt="Skills-11" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={heroku} alt="Heroku" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">Heroku</h4>
@@ -205,10 +208,40 @@ function Home() {
                         <div className="skillsTwelve col-lg-3 col-md-6 col-sm-12">
                             <div className="skills">
                                 <div className="skills-img text-center-py-4">
-                                    <img src={postgresql} alt="Skills-12" className="rounded mx-auto d-block img-fluid" />
+                                    <img src={postgresql} alt="Postgres" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title text-uppercase font-roboto">PostgreSQL</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="skills col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={aws} alt="AWS" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">AWS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="skills col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={java} alt="Java" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">Java</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={linux} alt="Linux" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title text-uppercase font-roboto">Linux</h4>
                                 </div>
                             </div>
                         </div>
