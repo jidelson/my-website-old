@@ -6,7 +6,6 @@ import about from '../../images/about.png';
 
 import rez from '../../images/rez.pdf';
 
-
 import html from '../../images/html.png';
 import css from '../../images/css.png';
 import javascript from '../../images/javascript.png';
