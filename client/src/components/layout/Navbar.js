@@ -9,16 +9,16 @@ function Navbar() {
     <NavContainer>
       <nav className="navbar navbar-expand-lg">
         <Link to="/" className="navbar-brand">
-            <img src={logo} alt="logo" style={{ width: "45px" }} />
+          <img src={logo} alt="logo" style={{ width: "45px", marginLeft: "40%"}} />
         </Link>
         <button 
-        className="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
+          className="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
           <span>
             <i className="fas fa-bars" style={{color: '#fff'}}></i>
           </span>

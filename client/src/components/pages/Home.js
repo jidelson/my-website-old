@@ -37,7 +37,7 @@ function Home() {
                             <h4 className="jobTitle text-uppercase">Full Stack Web Developer</h4>
                             <div className="site-buttons">
                                 <div className="d-flex flex-row">
-                                    <Link className="btn button primary-button mr-4 text-uppercase" to="/contact">Hire Me</Link>
+                                    <Link className="btn button primary-button mr-4 text-uppercase" to="/contact">Message Me</Link>
                                     <Link className="btn button secondary-button text-uppercase" to="/resume">My Resume</Link>
                                 </div>
                             </div>
@@ -65,10 +65,13 @@ function Home() {
                         <div className="paragraph py-4">
                         <p className="para">
                             Hey there! I'm Joe Idelson, a full stack web developer.
-                            I live in the San Francisco Bay Area. Prior to coding, I recieved my Bachelor's in Applied Science for Animation and Visual Effects. I am hard working and passionate about my work. I am always looking for ways to improve.
+                            I live in the San Francisco Bay Area. Prior to coding, I recieved my Bachelor's in Applied Science for Animation and Visual Effects.
+                            I am hard working and passionate about my work. 
+                            I am always looking for ways to improve.
                         </p>
                         <p className="para">
-                            I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.
+                            I graduated from Lambda School, a nine month intensive boot-camp style school, where I was taught the most contemporary techniques and skills for web development. 
+                            When I am not coding, I enjoy spending time with family and friends, and working on a variety of art projects.
                         </p>
                     </div>
                        
