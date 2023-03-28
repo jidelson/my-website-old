@@ -8,6 +8,7 @@ import expression from '../../images/expression.jpg';
 import lambda from '../../images/lambda.png';
 import dallas from '../../images/dallas.jpg';
 import revature from '../../images/revature.png';
+import infosys from '../../images/infosys.png';
 
 function About() {
     return (
@@ -117,6 +118,9 @@ function About() {
                             such as Java, Spring, Microservices, React, Cloud Computing, multiple AWS courses, and DevOps. After training I have been a part of a client project working primarily 
                             as a Database Administrator. More details regarding this project can be viewed on my resume.
                         </p>       
+                    </div>
+                    <div className='col-md-4 py-4'>
+                        <img src={infosys} alt="Infosys" />
                     </div>
                 </div>
             </div>
