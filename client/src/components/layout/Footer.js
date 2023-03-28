@@ -1,23 +1,47 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <FooterContainer className="main-footer">
-            <div className="footer-top">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <ul className="list-inline">
-                                <li className="list-inline-item"><a href="/">Home</a><i className="fas fa-home"></i></li>
-                                <li className="list-inline-item"><a href="/about">About</a></li>
-                                <li className="list-inline-item"><a href="/portfolio">Portfolio</a></li>
-                                <li className="list-inline-item"><a href="/resume">Resume</a></li>
-                                <li className="list-inline-item"><a href="/contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+        <FooterContainer>
+<div className="footer-top">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-12">
+        <ul className="nav justify-content-center">
+          <li className="nav-item">
+            <Link className="nav-link text-uppercase" to="/">
+              Home&nbsp;<i className="fas fa-home"></i>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link text-uppercase" to="/about">
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link text-uppercase" to="/portfolio">
+              Portfolio
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link text-uppercase" to="/resume">
+              Resume
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link text-uppercase" to="/contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+
+
+  
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
@@ -45,6 +69,13 @@ function Footer() {
 export default Footer;
 
 const FooterContainer = styled.footer`
+
+
+
+
+
+
+
 .footer-top{
     background: var(--mainDark);
     padding-top: 3rem;
@@ -61,8 +92,8 @@ ul li a{
     text-transform: uppercase;
 }
 ul li a:hover{
-    color:turquoise;
-    text-decoration:none;
+    color: turquoise;
+    text-decoration: none;
 }
 
 .list-inline{
