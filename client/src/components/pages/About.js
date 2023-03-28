@@ -7,6 +7,7 @@ import wc from '../../images/wc.jpg';
 import expression from '../../images/expression.jpg';
 import lambda from '../../images/lambda.png';
 import dallas from '../../images/dallas.jpg';
+import revature from '../../images/revature.png';
 
 function About() {
     return (
@@ -99,7 +100,7 @@ function About() {
             <div className="container-fluid">
                 <div className="row">
                     <div className='col-md-4 py-4'>
-                        
+                        <img src={revature} alt="Revature" style={{maxWidth: "100%"}} />
                     </div>
                     <div className="col-md-4 py-4">
                         <p className='para'>
