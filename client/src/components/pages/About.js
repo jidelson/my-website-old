@@ -6,6 +6,7 @@ import bayB from '../../images/bayB.jpg';
 import wc from '../../images/wc.jpg';
 import expression from '../../images/expression.jpg';
 import lambda from '../../images/lambda.png';
+import dallas from '../../images/dallas.jpg';
 
 function About() {
     return (
@@ -19,6 +20,7 @@ function About() {
                         <h2 className="text-uppercase pt-5">Hey there!</h2>
                         <p className="para pt-3">I'm Joe Idelson, a full stack web developer.</p>
                         <p className="para">I was born in the beautiful city of San Francisco and grew up in the city of Walnut Creek, CA.</p>
+                        <p className='para'>In 2022 I relocated and now reside in the Dallas-Fort Worth Metroplex.</p>
                     </div>
                     <div className="col-md-4 py-4">
                         <img src={bayB} alt="Bay Bridge & SF Skyline" style={{maxWidth: "100%"}} />
@@ -56,7 +58,7 @@ function About() {
                         </p>
                     </div>
                     <div className="col-md-4 py-4">
-                        <img src={expression} alt="expression-img" className="expression img-fluid" />
+                    <img src={dallas} alt="Dallas Skyline" />
                     </div>
                 </div>
             </div>
@@ -64,7 +66,7 @@ function About() {
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-md-4 py-4'>
-                        <img src={lambda} alt="lambda-img" className="lambda img-fluid" />    
+                        <img src={expression} alt="expression-img" className="expression img-fluid" />
                     </div>
                     <div className='col-md-4 py-4'>
                         <p className="para">
@@ -82,15 +84,11 @@ function About() {
                             Below you can see my badge of completion for the Lambda School curriculum and some of what it entailed.
                         </p>
                     </div>
+                    <div className='col-md-4 py-4'>
+                        <img src={lambda} alt="lambda-img" className="lambda img-fluid" />    
+                    </div>
                 </div>
             </div>
-
-
-
-           
-
-
-
 
             <div className="text-center">
                 <a className="btn button primary-button mr-4 text-uppercase" href="https://drive.google.com/file/d/1urVavN1ztUdGnO6UMR6UIm1xZEU3Yqxl/view?usp=sharing">
@@ -100,50 +98,34 @@ function About() {
 
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-lg-4 col-md-12">
+                    <div className='col-md-4 py-4'>
                         
-                            
+                    </div>
+                    <div className="col-md-4 py-4">
+                        <p className='para'>
+                            After completing the Lambda program, I worked and received additional training through a company called Revature. While working at Revature I was trained 
+                            in a number of technologies, programming languages, and frameworks including Java, Maven, SQL, Git, AWS, JDBC, HTML, CSS, JavaScript, HTTP, Servlets, 
+                            REST, Hibernate, Angular, Spring, DevOps, and Microservices.
+                        </p>
+                        <p className='para'>
+                            During my time at Revature I was trained by attending lectures, completing projects, working on coding challenges, mock interviews, and other interactive exercises.
+                            Projects were done individually, in small groups, as well as large groups of about 25 developers. 
+                        </p>
+                        <p className='para'>
+                            After Revature, I was hired at Infosys where I currently work since December of 2021. At Infosys I started off by getting more trained by taking courses on subjects
+                            such as Java, Spring, Microservices, React, Cloud Computing, multiple AWS courses, and DevOps. After training I have been a part of a client project working primarily 
+                            as a Database Administrator. More details regarding this project can be viewed on my resume.
+                        </p>       
                     </div>
                 </div>
             </div>
 
          
   
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-lg-8 col-md-12">
-                        <div className="lambdaText py-4 w-75">
-                           
-                        </div>
+          
 
-                       
-                    </div>
-
-                    <div className="lambda-image col-lg-4 col-md-12">
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <p className='para'>
-                    After completing the Lambda program, I worked and received additional training through a company called Revature. While working at Revature I was trained 
-                    in a number of technologies, programming languages, and frameworks including Java, Maven, SQL, Git, AWS, JDBC, HTML, CSS, JavaScript, HTTP, Servlets, 
-                    REST, Hibernate, Angular, Spring, DevOps, and Microservices.
-                </p>
-                <p className='para'>
-                    During my time at Revature I was trained by attending lectures, completing projects, working on coding challenges, mock interviews, and other interactive exercises.
-                    Projects were done individually, in small groups, as well as large groups of about 25 developers. 
-                </p>
-            </div>
-
-            <div>
-                <p className='para'>
-                    After Revature, I was hired at Infosys where I currently work since December of 2021. At Infosys I started off by getting more trained by taking courses on subjects
-                    such as Java, Spring, Microservices, React, Cloud Computing, multiple AWS courses, and DevOps. After training I have been a part of a client project working primarily 
-                    as a Database Administrator. More details regarding this project can be viewed on my resume.
-                </p>
-            </div>
+            
+          
             
         </AboutContainer>
              
