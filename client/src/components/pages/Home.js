@@ -21,6 +21,7 @@ import java from '../../images/java.png';
 import linux from '../../images/linux.png';
 import mysql from '../../images/mysql.png';
 import github from '../../images/github.png';
+import spring from '../../images/spring.png';
 
 import vbb from '../../images/vbb.png';
 import cookbook from '../../images/cookbook.jpg';
@@ -264,6 +265,16 @@ function Home() {
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title font-roboto">GitHub</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12">
+                            <div className="skills">
+                                <div className="skills-img text-center-py-4">
+                                    <img src={spring} alt="Spring" className="rounded mx-auto d-block img-fluid" />
+                                </div>
+                                <div className="card-body text-center">
+                                    <h4 className="card-title font-roboto">Spring</h4>
                                 </div>
                             </div>
                         </div>
