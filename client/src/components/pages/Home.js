@@ -70,8 +70,8 @@ function Home() {
                         <div className="paragraph py-4">
                             <p className="para">
                                 Hey there! I'm Joe Idelson, a full stack web developer.
-                                I am originally from the San Francisco Bay Area, and now reside in the Dallas-Fort Worth Metroplex. Prior to coding, I recieved my Bachelor's in Applied 
-                                Science for Animation and Visual Effects.
+                                I am originally from the San Francisco Bay Area, and now reside in the Dallas-Fort Worth Metroplex. Prior to learning coding, I recieved my Bachelor's in 
+                                Applied Science for Animation and Visual Effects.
                                 I am hard working and passionate about my work and always looking for ways to improve myself and my skills. I enjoy solving new problems and finding solutions
                                 for any challenge I am faced with.    
                             </p>
@@ -92,7 +92,7 @@ function Home() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-12 text-center skills-title">
-                        <h1 className="text-uppercase title-text">Skills</h1> 
+                        <h1 className="title-text">Some technologies I have experience with</h1> 
                     </div>
                 </div>
             
@@ -124,7 +124,7 @@ function Home() {
                                     <img src={javascript} alt="Javascript" className="rounded mx-auto d-block img-fluid" />
                                 </div>
                                 <div className="card-body text-center">
-                                    <h5 className="card-title font-roboto">Javascript</h5>
+                                    <h5 className="card-title font-roboto">JavaScript</h5>
                                 </div>
                             </div>
                         </div>
