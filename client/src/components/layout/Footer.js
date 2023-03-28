@@ -9,28 +9,28 @@ function Footer() {
   <div className="container">
     <div className="row">
       <div className="col-md-12">
-        <ul className="nav justify-content-center">
-          <li className="nav-item">
+        <ul className="nav justify-content-center" style={{width: "100%"}}>
+          <li className="nav-item" style={{ marginRight: "5%" }}>
             <Link className="nav-link text-uppercase" to="/">
               Home&nbsp;<i className="fas fa-home"></i>
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" style={{ marginRight: "5%" }}>
             <Link className="nav-link text-uppercase" to="/about">
               About
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" style={{ marginRight: "5%" }}>
             <Link className="nav-link text-uppercase" to="/portfolio">
               Portfolio
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" style={{ marginRight: "5%" }}>
             <Link className="nav-link text-uppercase" to="/resume">
               Resume
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" style={{ marginRight: "5%" }}>
             <Link className="nav-link text-uppercase" to="/contact">
               Contact
             </Link>
