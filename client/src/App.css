@@ -141,26 +141,15 @@
     width: 50%;
     margin-left: 3%;
   }
-  .topRow{
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
-    
-  }
-  .headshot{
-    margin-left: 50%;
-  }
-  .whereImFromRow{
-   text-align: center;
-  }
+
   .expressionRow{
     text-align: center;
   }
-  .expression-image{
+  /* .expression-image{
     width:50%; 
     text-align: center;
     margin-left: 23%;
-  }
+  } */
   .expression-container{
     display: flex;
     flex-direction: column-reverse;
@@ -174,16 +163,8 @@
   .lambda-image{
     text-align: center;
   }
-  .heyThere{
-    text-align: center;
-  }
-  .bayB{
-    width: 75%;  
-}
 
-.wc{
-    width:75%;
-}
+
 
 /* PORTFOLIO PAGE */
 .projectRow{
