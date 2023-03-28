@@ -130,7 +130,7 @@ function About() {
             <div className="container-fluid">
                 <div className="row">
                     <div className='col-md-4 py-4'>
-                        <img src={revature} alt="Revature" style={{maxWidth: "100%"}} />
+                        <img src={revature} alt="Revature" style={{maxWidth: "60%"}} />
                     </div>
                     <div className="col-md-4 py-4">
                         
