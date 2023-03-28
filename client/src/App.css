@@ -99,54 +99,7 @@
     flex-direction:column;
     
   }
-  .skillsOne{
-    display:flex;
-    justify-content: center;
-  }
-  .skillsTwo{
-    display:flex;
-    justify-content: center;
-  }
-  .skillsThree{
-    display:flex;
-    justify-content: center;
-  }
-  .skillsFour{
-    display:flex;
-    justify-content: center;    
-  }
-  .skillsFive{
-    display:flex;
-    justify-content: center;    
-  }
-  .skillsSix{
-    display:flex;
-    justify-content: center;    
-  }
-  .skillsSeven{
-    display:flex;
-    justify-content: center;    
-  }
-  .skillsEight{
-    display:flex;
-    justify-content: center;    
-  }
-  .skillsNine{
-    display:flex;
-    justify-content: center;    
-  }
-  .skillsTen{
-    display:flex;
-    justify-content: center;    
-  }
-  .skillsEleven{
-    display:flex;
-    justify-content: center;    
-  }
-  .skillsTwelve{
-    display:flex;
-    justify-content: center;    
-  }
+
   /* PORTFOLIO PAGE */
   .projectRow{
     text-align: center;
