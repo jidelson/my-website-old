@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import vbb from '../../images/vbb.png';
 import cookbook from '../../images/cookbook.jpg';
 import cookbook2 from '../../images/cookbook2.png';
-import dollar from '../../images/dollar.png';
+import dollar from '../../images/dollar.jpg';
 
 
 function Portfolio() {
@@ -18,19 +18,20 @@ function Portfolio() {
             </div>
 
             <div className='projectRow row grid'>
-                <div className="col-lg-4 col-md-6 col-sm-12  py-4">
+            <div className="col-lg-4 col-md-6 col-sm-12  py-4">
                     <div className='our-project text-center'>
                         <div className='img'>
-                            <img src={dollar} alt="Employee Reimbursement System"  style={{maxWidth: "100%"}}  />
+                            <img src={dollar} alt="Employee Reimbursement System"  style={{maxWidth: "50%"}}  />
                         </div>
                         <div className="title py-4 text-center">
-                            <h4 className="text-uppercase">Employee Reimbursement System</h4>
+                            <h4 className="text-uppercase">Employee Reimbursement</h4>
+                            <h4 className="text-uppercase">System</h4>
                             <p className="text-secondary">Full Stack Developer</p>
                         </div>
                         <div className="text-center"> 
                                 <a href="https://github.com/jidelson/RevatureProj1" className="btn button primary-button mr-4 text-uppercase" role="button">View</a>  
-                            </div>
-                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -78,6 +79,14 @@ function Portfolio() {
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
             </div>
         </PortfolioContainer>
     )
