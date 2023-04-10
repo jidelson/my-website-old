@@ -28,7 +28,7 @@ function Navbar() {
           <ul className="navbar-nav mx-auto justify-content-between" style={{ width: "30%" }}>
             <li className="nav-item">
               <Link className="nav-link text-uppercase" to="/">
-                Home&nbsp;<i className="fas fa-home"></i>
+                Home&nbsp;<i className="fa fa-home"></i>
               </Link>
             </li>
             <li className="nav-item">

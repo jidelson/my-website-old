@@ -12,7 +12,7 @@ function Footer() {
         <ul className="nav justify-content-center" style={{width: "100%"}}>
           <li className="nav-item" style={{ marginRight: "5%" }}>
             <Link className="nav-link text-uppercase" to="/">
-              Home&nbsp;<i className="fas fa-home"></i>
+              Home&nbsp;<i className="fa fa-home"></i>
             </Link>
           </li>
           <li className="nav-item" style={{ marginRight: "5%" }}>
