@@ -5,6 +5,7 @@ import vbb from '../../images/vbb.png';
 import cookbook from '../../images/cookbook.jpg';
 import cookbook2 from '../../images/cookbook2.png';
 import dollar from '../../images/dollar.jpg';
+import flashcards from '../../images/flashcards.jpg';
 
 
 function Portfolio() {
@@ -17,8 +18,24 @@ function Portfolio() {
                 <h5>Check out my <a href="https://www.github.com/jidelson">github</a> to see my most recent work!</h5>
             </div>
 
+
+
             <div className='projectRow row grid'>
-            <div className="col-lg-4 col-md-6 col-sm-12  py-4">
+                <div className="col-lg-4 col-md-6 col-sm-12  py-4">
+                    <div className='our-project text-center'>
+                        <div className='img'>
+                            <img src={flashcards} alt="Flashcard App"  style={{maxWidth: "50%"}}  />
+                        </div>
+                        <div className="title py-4 text-center">
+                            <h4 className="text-uppercase">Flashcard App</h4>
+                            <p className="text-secondary">Full Stack Developer</p>
+                        </div>
+                        <div className="text-center"> 
+                                <a href="https://github.com/jidelson/RevatureProj2" className="btn button primary-button mr-4 text-uppercase" role="button">View</a>  
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-4 col-md-6 col-sm-12  py-4">
                     <div className='our-project text-center'>
                         <div className='img'>
                             <img src={dollar} alt="Employee Reimbursement System"  style={{maxWidth: "50%"}}  />
@@ -33,6 +50,7 @@ function Portfolio() {
                         </div>
                     </div>
                 </div>
+                
             </div>
 
 
