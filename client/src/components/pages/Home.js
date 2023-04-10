@@ -26,6 +26,8 @@ import spring from '../../images/spring.png';
 import vbb from '../../images/vbb.png';
 import cookbook from '../../images/cookbook.jpg';
 import cookbook2 from '../../images/cookbook2.png';
+import dollar from '../../images/dollar.jpg';
+import flashcards from '../../images/flashcards.jpg';
 
 import { Link } from 'react-router-dom';
 
@@ -290,6 +292,48 @@ function Home() {
                 </div>
             
                 <div className="container-fluid">
+                    <div className="row grid">
+                        <div className="col-lg-4 col-md-12 col-sm-12">
+                            <div className="our-project text-center">
+                                <div className="img py-4">
+                                    <img className="proj-img" src={flashcards} alt="Flashcard App" />
+                                </div>
+                                <div className="title py-4 text-center">
+                                        <h4 className="text-uppercase">Flashcard App</h4>
+                                        <span className="text-secondary">Full Stack Developer</span>
+                                </div>
+                                <div className="text-center"> 
+                                    <a 
+                                        href="https://github.com/jidelson/RevatureProj2" 
+                                        className="btn button-proj primary-button mr-4 text-uppercase" 
+                                        role="button"
+                                    >
+                                        View
+                                    </a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-12 col-sm-12">
+                            <div className="our-project text-center">
+                                <div className="img py-4">
+                                    <img className="proj-img" src={dollar} alt="Employee Reimbursement System" />
+                                </div>
+                                <div className="title py-4 text-center">
+                                        <h4 className="text-uppercase">Employee Reimbursement System</h4>
+                                        <span className="text-secondary">Full Stack Developer</span>
+                                </div>
+                                <div className="text-center"> 
+                                    <a 
+                                        href="https://github.com/jidelson/RevatureProj1" 
+                                        className="btn button-proj primary-button mr-4 text-uppercase" 
+                                        role="button"
+                                    >
+                                        View
+                                    </a>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="row grid">
                         <div className="projectOne col-lg-4 col-md-12 col-sm-12">
                             <div className="our-project text-center">
