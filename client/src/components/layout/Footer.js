@@ -96,6 +96,20 @@ ul li a:hover{
     text-decoration: none;
 }
 
+ul li a:link,
+ul li a:visited {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul li a:hover,
+ul li a:active {
+  color: turquoise;
+  text-decoration: none;
+}
+
+
 .list-inline{
     display: flex;
     justify-content: space-between;
@@ -159,5 +173,7 @@ ul li a:hover{
 .footer-social-icons p{
     font-size: 0;
 }
+
+
 
 `;

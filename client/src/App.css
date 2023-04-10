@@ -24,6 +24,7 @@
   border: none;
 }
 
+
 @media (max-width: 390px){
   .name{
     font-size: 4rem !important;
