@@ -49,8 +49,11 @@ function Contact() {
 
                 <div className="bottomInfo text-center py-4">
                     <p>
-                        <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;<span className="phoneInfo">(925)478-1747</span>
-                    </p>
+                        <a href="tel:+19254781747">
+                            <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;
+                        </a>
+                        <span className="phoneInfo">(925)478-1747</span>
+                     </p>
                     <p>
                         <i className="fa fa-envelope-square" aria-hidden="true" onClick={() => {window.location.href = 'mailto:joeidelson@gmail.com';}}></i>&nbsp;
                         <span className="emailInfo">joeidelson@gmail.com</span>
