@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 toast.configure()
 function Contact() {
+    
     const notify = () => {
         toast('Email sent!')
     }
@@ -13,6 +14,9 @@ function Contact() {
     function sendEmail(e){
         e.preventDefault();
 
+
+
+        // sends the email
         emailjs.sendForm('service_rgh658x', 'template_jk0ogmk', e.target, 'user_5siGv8EVrjS5Pxk1dMwDw')
           .then((result) => {
               console.log(result.text);
@@ -22,6 +26,40 @@ function Contact() {
           e.target.reset();
 
     }
+
+    function validateFName(event) {
+        const firstName = event.target.value;
+        
+        // Validate input field
+        if (!firstName || !/^[a-zA-Z]+$/.test(firstName.trim())) {
+          // If the first name field is not a letter or is empty, display error message
+          document.getElementById('fNameError').innerHTML = 'Please enter a valid first name.';
+        } else {
+          // Clear any existing error messages
+          document.getElementById('fNameError').innerHTML = '';
+        }}
+
+
+        function validatelName(event) {
+            const lName = event.target.value;
+            
+            if (!lName || !/^[a-zA-Z]+$/.test(lName.trim())) {
+              document.getElementById('lNameError').innerHTML = 'Please enter a valid last name.';
+            } else {
+              document.getElementById('lNameError').innerHTML = '';
+            }}
+
+        function validateEmail(e){
+            const email = e.target.value;
+
+            if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())){
+                document.getElementById('emailError').innerHTML = 'Please enter a valid email address.';
+            } else{
+                document.getElementById('emailError').innerHTML = '';
+            }
+        }
+    
+
     return (
         <ContactContainer>
             <h1 className="intro text-center">Contact Me</h1>
@@ -30,13 +68,16 @@ function Contact() {
                 <form onSubmit={sendEmail}>
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
-                            <input type="text" className="form-control" placeholder="First Name" name="fName" />
+                            <input type="text" className="form-control" placeholder="First Name" name="fName" onChange={validateFName}/>
+                            <div id='fNameError'></div>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Last Name" name="lName" />
+                            <input type="text" className="form-control" placeholder="Last Name" name="lName" onChange={validatelName} />
+                            <div id='lNameError'></div>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="Email Address" name="email" />
+                            <input type="email" className="form-control" placeholder="Email Address" name="email" onChange={validateEmail}/>
+                            <div id='emailError'></div>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
                             <input type="text" className="form-control" placeholder="Subject" name="subject" />
