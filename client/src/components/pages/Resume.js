@@ -12,7 +12,7 @@ function Resume() {
                 style={{ 
                     position: 'relative', 
                     width: '100vh', 
-                    height: '100vh', // Set height to full viewport height
+                    height: '100vh', // Sets the height to full viewport height
                     border: '5px solid black'
             }}>
                 <iframe
