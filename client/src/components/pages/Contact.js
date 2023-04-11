@@ -47,33 +47,15 @@ function Contact() {
                     </div>
                 </form>
 
-                
-                {/* <div className="bottomInfo text-center py-4">
-                   <p><i className="fa fa-phone">&nbsp;<span className="phoneInfo">(925)478-1747</span></i></p> 
-                   <p> <i className="fa fa-envelope-square">&nbsp;<span className="emailInfo">joeidelson@gmail.com</span></i></p> 
-                </div> */}
-
-<div className="bottomInfo text-center py-4">
-    <p>
-        <i
-            className="fa fa-phone"
-            aria-hidden="true"
-        ></i>&nbsp;<span className="phoneInfo">(925)478-1747</span>
-    </p>
-    <p>
-        <i
-            className="fa fa-envelope-square"
-            aria-hidden="true"
-            onClick={() => {
-                window.location.href = 'mailto:joeidelson@gmail.com';
-            }}
-        ></i>&nbsp;
-        <span className="emailInfo">joeidelson@gmail.com</span>
-    </p>
-</div>
-
-               
-
+                <div className="bottomInfo text-center py-4">
+                    <p>
+                        <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;<span className="phoneInfo">(925)478-1747</span>
+                    </p>
+                    <p>
+                        <i className="fa fa-envelope-square" aria-hidden="true" onClick={() => {window.location.href = 'mailto:joeidelson@gmail.com';}}></i>&nbsp;
+                        <span className="emailInfo">joeidelson@gmail.com</span>
+                    </p>
+                </div>
             </div>
         </ContactContainer>
     )
@@ -82,57 +64,47 @@ function Contact() {
 export default Contact;
 
 const ContactContainer = styled.div`
-
-.button{
-    padding: 1.5rem 2.2rem;
-    font: normal 500 16px/20px var(--roboto);
-    position: relative;
-    border: 2px solid #854fee;
-    border-radius: 4px;
-}
-
-.button.primary-button{
-    background: var(--gradient-color);
-    background-clip: padding-box;
-    color: whitesmoke;
-    transition: background .6s ease;
-    box-shadow: var(--box-shadow);
-}
-
-.button.primary-button:hover{
-    background:whitesmoke;
-    background-clip: padding-box;
-    color: black;
-}
-
-.intro{
-    padding-top: 2%;
-    font: normal bold 50px/72px var(--roboto);
-    font-weight: 500;
-}
-.title-text{
-    font: normal 30px/72px var(--roboto);
-}
-
-.fa.fa-phone{
-    font-size: 4rem;   
-}
-
-.fa.fa-envelope-square{
-    font-size: 4rem;
-    cursor: pointer;
-}
-
-.fa.fa-envelope-square:hover{
-    color: turquoise;
-}
-
-.phoneInfo{
-    font-size:50px;
-}
-
-.emailInfo{
-    font-size:30px;
-}
-
-`
+    .button{
+        padding: 1.5rem 2.2rem;
+        font: normal 500 16px/20px var(--roboto);
+        position: relative;
+        border: 2px solid #854fee;
+        border-radius: 4px;
+    }
+    .button.primary-button{
+        background: var(--gradient-color);
+        background-clip: padding-box;
+        color: whitesmoke;
+        transition: background .6s ease;
+        box-shadow: var(--box-shadow);
+    }
+    .button.primary-button:hover{
+        background:whitesmoke;
+        background-clip: padding-box;
+        color: black;
+    }
+    .intro{
+        padding-top: 2%;
+        font: normal bold 50px/72px var(--roboto);
+        font-weight: 500;
+    }
+    .title-text{
+        font: normal 30px/72px var(--roboto);
+    }
+    .fa.fa-phone{
+        font-size: 4rem;   
+    }
+    .fa.fa-envelope-square{
+        font-size: 4rem;
+        cursor: pointer;
+    }
+    .fa.fa-envelope-square:hover{
+        color: turquoise;
+    }
+    .phoneInfo{
+        font-size:50px;
+    }
+    .emailInfo{
+        font-size:30px;
+    }
+`;
