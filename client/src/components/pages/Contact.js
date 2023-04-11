@@ -48,10 +48,30 @@ function Contact() {
                 </form>
 
                 
-                <div className="bottomInfo text-center py-4">
+                {/* <div className="bottomInfo text-center py-4">
                    <p><i className="fa fa-phone">&nbsp;<span className="phoneInfo">(925)478-1747</span></i></p> 
                    <p> <i className="fa fa-envelope-square">&nbsp;<span className="emailInfo">joeidelson@gmail.com</span></i></p> 
-                </div>
+                </div> */}
+
+<div className="bottomInfo text-center py-4">
+    <p>
+        <i
+            className="fa fa-phone"
+            aria-hidden="true"
+        ></i>&nbsp;<span className="phoneInfo">(925)478-1747</span>
+    </p>
+    <p>
+        <i
+            className="fa fa-envelope-square"
+            aria-hidden="true"
+            onClick={() => {
+                window.location.href = 'mailto:joeidelson@gmail.com';
+            }}
+        ></i>&nbsp;
+        <span className="emailInfo">joeidelson@gmail.com</span>
+    </p>
+</div>
+
                
 
             </div>
@@ -100,6 +120,11 @@ const ContactContainer = styled.div`
 
 .fa.fa-envelope-square{
     font-size: 4rem;
+    cursor: pointer;
+}
+
+.fa.fa-envelope-square:hover{
+    color: turquoise;
 }
 
 .phoneInfo{

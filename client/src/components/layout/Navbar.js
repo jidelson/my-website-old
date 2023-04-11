@@ -27,29 +27,19 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav justify-content-center" style={{ width: "100%" }}>
             <li className="nav-item" style={{ marginRight: "5%" }}>
-              <Link className="nav-link text-uppercase" to="/">
-                Home&nbsp;<i className="fa fa-home"></i>
-              </Link>
+              <Link className="nav-link text-uppercase" to="/">Home&nbsp;<i className="fa fa-home"></i></Link>
             </li>
             <li className="nav-item" style={{ marginRight: "5%" }}>
-              <Link className="nav-link text-uppercase" to="/about">
-                About
-              </Link>
+              <Link className="nav-link text-uppercase" to="/about">About</Link>
             </li>
             <li className="nav-item" style={{ marginRight: "5%" }}>
-              <Link className="nav-link text-uppercase" to="/portfolio">
-                Portfolio
-              </Link>
+              <Link className="nav-link text-uppercase" to="/portfolio">Portfolio</Link>
             </li>
             <li className="nav-item" style={{ marginRight: "5%" }}>
-              <Link className="nav-link text-uppercase" to="/resume">
-                Resume
-              </Link>
+              <Link className="nav-link text-uppercase" to="/resume">Resume</Link>
             </li>
             <li className="nav-item" style={{ marginRight: "5%" }}>
-              <Link className="nav-link text-uppercase" to="/contact">
-                Contact
-              </Link>
+              <Link className="nav-link text-uppercase" to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -61,12 +51,10 @@ function Navbar() {
 export default Navbar;
 
 const NavContainer = styled.div`
-
-.nav-link{
-  color: white;
-}
-
-.nav-link:hover{
-  color: turquoise;
-}
+  .nav-link{
+    color: white;
+  }
+  .nav-link:hover{
+    color: turquoise;
+  }
 `;
