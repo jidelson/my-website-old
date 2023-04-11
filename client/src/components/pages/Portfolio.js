@@ -15,7 +15,7 @@ function Portfolio() {
                 <h1 className="text-uppercase title-h1 text-center">Projects</h1>
             </div>
             <div className="text-center">
-                <h5>Check out my <a href="https://www.github.com/jidelson">github</a> to see my most recent work!</h5>
+                <h5>Check out my <a href="https://www.github.com/jidelson">GitHub</a> to see my most recent work!</h5>
             </div>
 
 
