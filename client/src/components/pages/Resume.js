@@ -5,27 +5,26 @@ import resume from '../../images/resume.pdf';
 function Resume() {
     return (
         <ResumeContainer className="text-center">
-            {/* <a className="btn button primary-button mr-4 text-uppercase" href="https://drive.google.com/file/d/1lelwX6Ur_MEuUdsKXa_UgIFRbqRukQ85/view?usp=share_link">
-                View Resume
-            </a> */}
+            <div className="rezDlBtn">
+                <a href={resume} download className="btn button primary-button text-uppercase">Download Resume</a>
+            </div>
             <div className="pdf-container" 
                 style={{ 
                     position: 'relative', 
                     width: '100vh', 
                     height: '100vh', // Set height to full viewport height
+                    border: '5px solid black'
             }}>
                 <iframe
                     title='resume' 
                     src="https://drive.google.com/file/d/1lelwX6Ur_MEuUdsKXa_UgIFRbqRukQ85/preview" 
                     width="100%" 
                     height="100%" 
-                    border="none">
+                >
                 </iframe>
             </div>
                
-            <div className="rezDlBtn">
-                <a href={resume} download className="btn button primary-button text-uppercase">Download Resume</a>
-            </div>
+            
         </ResumeContainer>
     )    
 
