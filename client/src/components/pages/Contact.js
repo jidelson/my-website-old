@@ -30,7 +30,10 @@ function Contact() {
                 <form onSubmit={sendEmail}>
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
-                            <input type="text" className="form-control" placeholder="Name" name="name" />
+                            <input type="text" className="form-control" placeholder="First Name" name="fName" />
+                        </div>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <input type="text" className="form-control" placeholder="Last Name" name="lName" />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
                             <input type="email" className="form-control" placeholder="Email Address" name="email" />
@@ -48,8 +51,8 @@ function Contact() {
                 </form>
 
                 <div className="bottomInfo text-center py-4">
-                    <p>
-                        <a href="tel:+19254781747">
+                    <p> 
+                        <a href="tel:+19254781747" className="phone-link">
                             <i className="fa fa-phone" aria-hidden="true"></i>&nbsp;
                         </a>
                         <span className="phoneInfo">(925)478-1747</span>
@@ -107,6 +110,13 @@ const ContactContainer = styled.div`
     .phoneInfo{
         font-size:50px;
     }
+    a.phone-link {
+        color: black;
+        text-decoration: none;
+    }
+      a.phone-link:hover {
+        color: turquoise;
+      }  
     .emailInfo{
         font-size:30px;
     }
