@@ -11,24 +11,41 @@ function Contact() {
     const initalValues = {fName: '', lName: '', email: '', subject: '', msg: ''}
     const [formValues, setFormValues] = useState(initalValues);
     const [formErrors, setFormErrors] = useState({});
+    const [isFormValid, setIsFormValid] = useState(false);
     
     
     const notify = () => {
         toast('Email sent!')
     }
     
-    function sendEmail(e){
-        e.preventDefault();
-    
+    function sendEmail(){
         // sends the email
-        emailjs.sendForm('service_rgh658x', 'template_jk0ogmk', e.target, 'user_5siGv8EVrjS5Pxk1dMwDw')
+        emailjs.send('service_rgh658x', 'template_jk0ogmk', {
+            from_name: formValues.fName + " " + formValues.lName,
+            from_email: formValues.email,
+            subject: formValues.subject,
+            message: formValues.msg,
+        }, 'user_5siGv8EVrjS5Pxk1dMwDw')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
           });
-        e.target.reset();
+        setFormValues(initalValues);
     }
+
+    // function sendEmail(e){
+    //     e.preventDefault();
+
+    //     // sends the email
+    //     emailjs.sendForm('service_rgh658x', 'template_jk0ogmk', e.target, 'user_5siGv8EVrjS5Pxk1dMwDw')
+    //       .then((result) => {
+    //           console.log(result.text);
+    //       }, (error) => {
+    //           console.log(error.text);
+    //       });
+    //     e.target.reset();
+    // }
     
     const fieldDisplayNames = {
         fName: "First Name",
@@ -45,23 +62,53 @@ function Contact() {
         subject: /^.+$/,
         msg: /^[a-zA-Z\s.,!?]+$/ 
     }
-    
     const validateField = (fieldName, value) => {
         const isValid = regex[fieldName].test(value);
         setFormValues((prevState) => ({...prevState, [fieldName]: value}));
         setFormErrors((prevState) => ({...prevState, [fieldName]: isValid ? "" : `Please enter a valid ${fieldDisplayNames[fieldName]}.`}));
     };
     
-    const handleChange = (e) => {
+    const handleBlur = (e) => {
         const { name, value } = e.target;
         validateField(name, value);
+        validateForm(name);
     };
+    
+    const validateForm = (fieldName) => {
+        const errors = {};
+        let isValid = true;
+        Object.keys(formValues).forEach(key => {
+          const fieldValue = formValues[key];
+          const fieldValid = regex[key].test(fieldValue);
+          errors[key] = fieldValid ? "" : `Please enter a valid ${fieldDisplayNames[key]}.`;
+          if (fieldName === key) {
+            setFormErrors((prevState) => ({...prevState, [fieldName]: errors[fieldName]}));
+          }
+          isValid = isValid && fieldValid;
+        });
+        setIsFormValid(isValid);
+      };
+      
+    
+      
+    
+    
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  validateField(name, value);
+  validateForm(name);
+};
+
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formValues);
+        if (!isFormValid) {
+            // If the form is not valid, display an error message or prevent form submission
+            return;
+        }
+        sendEmail();
         notify();
-      };
+    };
 
     
 
@@ -73,31 +120,31 @@ function Contact() {
                 <form onSubmit={handleSubmit}>
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
-                            <input type="text" className="form-control" placeholder="First Name" name="fName" onChange={handleChange} value={formValues.fName} />
+                            <input type="text" className="form-control" placeholder="First Name" name="fName" onChange={handleChange} value={formValues.fName} onBlur={handleBlur}/>
                             <p id='fNameError'>{formErrors.fName}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Last Name" name="lName" onChange={handleChange} value={formValues.lName} />
+                            <input type="text" className="form-control" placeholder="Last Name" name="lName" onChange={handleChange} value={formValues.lName} onBlur={handleBlur}/>
                             <p id='lNameError'>{formErrors.lName}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="Email Address" name="email" onChange={handleChange} value={formValues.email}/>
+                            <input type="email" className="form-control" placeholder="Email Address" name="email" onChange={handleChange} value={formValues.email} onBlur={handleBlur}/>
                             <p id='emailError'>{formErrors.email}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Subject" name="subject" onChange={handleChange} value={formValues.subject} />
+                            <input type="text" className="form-control" placeholder="Subject" name="subject" onChange={handleChange} value={formValues.subject} onBlur={handleBlur}/>
                             <p id='subjectError'>{formErrors.subject}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="msg" onChange={handleChange} value={formValues.msg}></textarea>
+                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="msg" onChange={handleChange} value={formValues.msg} onBlur={handleBlur}></textarea>
                             <p id='msgError'>{formErrors.msg}</p>
                         </div>
                         <div className="col-8 pt-3 pb-3 mx-auto text-center">
-                            <input type="submit" className="btn button primary-button mr-4 text-uppercase" value="Send Message"></input>
+                            <input type="submit" className="btn button primary-button mr-4 text-uppercase" value="Send Message" disabled={!isFormValid}></input>
                         </div>
                     </div>
                 </form>
-
+            </div>
                 <div className="bottomInfo text-center py-4">
                     <p> 
                         <a href="tel:+19254781747" className="phone-link">
@@ -110,7 +157,7 @@ function Contact() {
                         <span className="emailInfo" style={{paddingLeft: "2%"}}>joeidelson@gmail.com</span>
                     </p>
                 </div>
-            </div>
+            
         </ContactContainer>
     )
 }
