@@ -14,8 +14,6 @@ function Contact() {
     function sendEmail(e){
         e.preventDefault();
 
-
-
         // sends the email
         emailjs.sendForm('service_rgh658x', 'template_jk0ogmk', e.target, 'user_5siGv8EVrjS5Pxk1dMwDw')
           .then((result) => {
@@ -24,11 +22,10 @@ function Contact() {
               console.log(error.text);
           });
           e.target.reset();
-
     }
 
-    function validateFName(event) {
-        const firstName = event.target.value;
+    function validateFName(e) {
+        const firstName = e.target.value;
         
         // Validate input field
         if (!firstName || !/^[a-zA-Z]+$/.test(firstName.trim())) {
@@ -40,8 +37,8 @@ function Contact() {
         }}
 
 
-        function validatelName(event) {
-            const lName = event.target.value;
+        function validatelName(e) {
+            const lName = e.target.value;
             
             if (!lName || !/^[a-zA-Z]+$/.test(lName.trim())) {
               document.getElementById('lNameError').innerHTML = 'Please enter a valid last name.';
@@ -56,6 +53,16 @@ function Contact() {
                 document.getElementById('emailError').innerHTML = 'Please enter a valid email address.';
             } else{
                 document.getElementById('emailError').innerHTML = '';
+            }
+        }
+
+        function validateMsg(e){
+            const msg = e.target.value;
+
+            if(!msg || !/^.{0,1}[a-zA-Z].{0,}[a-zA-Z].{0,}$/.test(msg.trim())){
+                document.getElementById('msgError').innerHTML = 'Please enter a valid message.';
+            } else{
+                document.getElementById('msgError').innerHTML = '';
             }
         }
     
@@ -83,7 +90,8 @@ function Contact() {
                             <input type="text" className="form-control" placeholder="Subject" name="subject" />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message" onChange={validateMsg}></textarea>
+                            <div id='msgError'></div>
                         </div>
                         <div className="col-8 pt-3 pb-3 mx-auto text-center">
                             <input type="submit" className="btn button primary-button mr-4 text-uppercase" value="Send Message" onClick={notify}></input>
@@ -159,6 +167,18 @@ const ContactContainer = styled.div`
         color: turquoise;
       }  
     .emailInfo{
-        font-size:30px;
+        font-size: 30px;
+    }
+    #fNameError{
+        color: red;
+    }
+    #lNameError{
+        color: red;
+    }
+    #emailError{
+        color: red;
+    }
+    #msgError{
+        color: red;
     }
 `;
