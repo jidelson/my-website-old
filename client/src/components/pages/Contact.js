@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import styled from 'styled-components';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 toast.configure()
+
 function Contact() {
+
+    const initalValues = {fName: '', lName: '', email: '', subject: '', msg: ''}
+    const [formValues, setFormValues] = useState(initalValues);
+    const [formErrors, setFormErrors] = useState({});
+    
     
     const notify = () => {
         toast('Email sent!')
     }
-
+    
     function sendEmail(e){
         e.preventDefault();
-
+    
         // sends the email
         emailjs.sendForm('service_rgh658x', 'template_jk0ogmk', e.target, 'user_5siGv8EVrjS5Pxk1dMwDw')
           .then((result) => {
@@ -21,50 +27,42 @@ function Contact() {
           }, (error) => {
               console.log(error.text);
           });
-          e.target.reset();
+        e.target.reset();
     }
+    
+    const fieldDisplayNames = {
+        fName: "First Name",
+        lName: "Last Name",
+        email: "Email Address",
+        subject: "Subject",
+        msg: "message",
+    };
+    
+    const regex = {
+        fName: /^[a-zA-Z]+$/,
+        lName: /^[a-zA-Z]+$/,
+        email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+        subject: /^.+$/,
+        msg: /^[a-zA-Z\s.,!?]+$/ 
+    }
+    
+    const validateField = (fieldName, value) => {
+        const isValid = regex[fieldName].test(value);
+        setFormValues((prevState) => ({...prevState, [fieldName]: value}));
+        setFormErrors((prevState) => ({...prevState, [fieldName]: isValid ? "" : `Please enter a valid ${fieldDisplayNames[fieldName]}.`}));
+    };
+    
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        validateField(name, value);
+    };
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(formValues);
+        notify();
+      };
 
-    function validateFName(e) {
-        const firstName = e.target.value;
-        
-        // Validate input field
-        if (!firstName || !/^[a-zA-Z]+$/.test(firstName.trim())) {
-          // If the first name field is not a letter or is empty, display error message
-          document.getElementById('fNameError').innerHTML = 'Please enter a valid first name.';
-        } else {
-          // Clear any existing error messages
-          document.getElementById('fNameError').innerHTML = '';
-        }}
-
-
-        function validatelName(e) {
-            const lName = e.target.value;
-            
-            if (!lName || !/^[a-zA-Z]+$/.test(lName.trim())) {
-              document.getElementById('lNameError').innerHTML = 'Please enter a valid last name.';
-            } else {
-              document.getElementById('lNameError').innerHTML = '';
-            }}
-
-        function validateEmail(e){
-            const email = e.target.value;
-
-            if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())){
-                document.getElementById('emailError').innerHTML = 'Please enter a valid email address.';
-            } else{
-                document.getElementById('emailError').innerHTML = '';
-            }
-        }
-
-        function validateMsg(e){
-            const msg = e.target.value;
-
-            if(!msg || !/^.{0,1}[a-zA-Z].{0,}[a-zA-Z].{0,}$/.test(msg.trim())){
-                document.getElementById('msgError').innerHTML = 'Please enter a valid message.';
-            } else{
-                document.getElementById('msgError').innerHTML = '';
-            }
-        }
     
 
     return (
@@ -72,29 +70,30 @@ function Contact() {
             <h1 className="intro text-center">Contact Me</h1>
             <h4 className="title-text text-center">Have a question or want to work together?</h4>
             <div className="container">
-                <form onSubmit={sendEmail}>
+                <form onSubmit={handleSubmit}>
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
-                            <input type="text" className="form-control" placeholder="First Name" name="fName" onChange={validateFName}/>
-                            <div id='fNameError'></div>
+                            <input type="text" className="form-control" placeholder="First Name" name="fName" onChange={handleChange} value={formValues.fName} />
+                            <p id='fNameError'>{formErrors.fName}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Last Name" name="lName" onChange={validatelName} />
-                            <div id='lNameError'></div>
+                            <input type="text" className="form-control" placeholder="Last Name" name="lName" onChange={handleChange} value={formValues.lName} />
+                            <p id='lNameError'>{formErrors.lName}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="Email Address" name="email" onChange={validateEmail}/>
-                            <div id='emailError'></div>
+                            <input type="email" className="form-control" placeholder="Email Address" name="email" onChange={handleChange} value={formValues.email}/>
+                            <p id='emailError'>{formErrors.email}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Subject" name="subject" />
+                            <input type="text" className="form-control" placeholder="Subject" name="subject" onChange={handleChange} value={formValues.subject} />
+                            <p id='subjectError'>{formErrors.subject}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message" onChange={validateMsg}></textarea>
-                            <div id='msgError'></div>
+                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="msg" onChange={handleChange} value={formValues.msg}></textarea>
+                            <p id='msgError'>{formErrors.msg}</p>
                         </div>
                         <div className="col-8 pt-3 pb-3 mx-auto text-center">
-                            <input type="submit" className="btn button primary-button mr-4 text-uppercase" value="Send Message" onClick={notify}></input>
+                            <input type="submit" className="btn button primary-button mr-4 text-uppercase" value="Send Message"></input>
                         </div>
                     </div>
                 </form>
@@ -176,6 +175,9 @@ const ContactContainer = styled.div`
         color: red;
     }
     #emailError{
+        color: red;
+    }
+    #subjectError{
         color: red;
     }
     #msgError{
