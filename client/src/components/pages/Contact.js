@@ -60,7 +60,7 @@ function Contact() {
         lName: /^[a-zA-Z]+$/,
         email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
         subject: /^.+$/,
-        msg: /^[a-zA-Z\s.,!?]+$/ 
+        msg: /^[a-zA-Z0-9\s.,!?]+$/
     }
     const validateField = (fieldName, value) => {
         const isValid = regex[fieldName].test(value);
