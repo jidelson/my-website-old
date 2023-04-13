@@ -12,6 +12,8 @@ function Contact() {
     const [formValues, setFormValues] = useState(initalValues);
     const [formErrors, setFormErrors] = useState({});
     const [isFormValid, setIsFormValid] = useState(false);
+
+
     
     
     const notify = () => {
@@ -34,8 +36,6 @@ function Contact() {
         setFormValues(initalValues);
     }
 
-
-    
     const fieldDisplayNames = {
         fName: "First Name",
         lName: "Last Name",
@@ -56,6 +56,7 @@ function Contact() {
         const isValid = regex[fieldName].test(value);
         setFormValues((prevState) => ({...prevState, [fieldName]: value}));
         setFormErrors((prevState) => ({...prevState, [fieldName]: isValid ? "" : `Please enter a valid ${fieldDisplayNames[fieldName]}.`}));
+
     };
     
     const handleBlur = (e) => {
@@ -63,6 +64,8 @@ function Contact() {
         validateField(name, value);
         validateForm(name);
     };
+
+
     
     const validateForm = (fieldName) => {
         const errors = {};
@@ -110,23 +113,64 @@ function Contact() {
                 <form onSubmit={handleSubmit}>
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
-                            <input type="text" className="form-control" placeholder="First Name" name="fName" onChange={handleChange} value={formValues.fName} onBlur={handleBlur}/>
+                            <input 
+                                type="text" 
+                                className="form-control" 
+                                placeholder="First Name" 
+                                name="fName" 
+                                onChange={handleChange} 
+                                value={formValues.fName} 
+                                onBlur={handleBlur} 
+                            />
                             <p id='fNameError'>{formErrors.fName}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Last Name" name="lName" onChange={handleChange} value={formValues.lName} onBlur={handleBlur}/>
+                            <input 
+                                type="text" 
+                                className="form-control" 
+                                placeholder="Last Name" 
+                                name="lName" 
+                                onChange={handleChange} 
+                                value={formValues.lName} 
+                                onBlur={handleBlur} 
+                            />
                             <p id='lNameError'>{formErrors.lName}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="Email Address" name="email" onChange={handleChange} value={formValues.email} onBlur={handleBlur}/>
+                            <input 
+                                type="email" 
+                                className="form-control" 
+                                placeholder="Email Address" 
+                                name="email" 
+                                onChange={handleChange} 
+                                value={formValues.email} 
+                                onBlur={handleBlur} 
+                            />
                             <p id='emailError'>{formErrors.email}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Subject" name="subject" onChange={handleChange} value={formValues.subject} onBlur={handleBlur}/>
+                            <input 
+                                type="text" 
+                                className="form-control" 
+                                placeholder="Subject" 
+                                name="subject" 
+                                onChange={handleChange} 
+                                value={formValues.subject} 
+                                onBlur={handleBlur} 
+                            />
                             <p id='subjectError'>{formErrors.subject}</p>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="msg" onChange={handleChange} value={formValues.msg} onBlur={handleBlur}></textarea>
+                            <textarea 
+                                className="form-control" 
+                                cols="30" 
+                                rows="8" 
+                                placeholder="Your message" 
+                                name="msg" 
+                                onChange={handleChange} 
+                                value={formValues.msg} 
+                                onBlur={handleBlur}
+                            ></textarea>
                             <p id='msgError'>{formErrors.msg}</p>
                         </div>
                         <div className="col-8 pt-3 pb-3 mx-auto text-center">
@@ -155,25 +199,41 @@ function Contact() {
 export default Contact;
 
 const ContactContainer = styled.div`
-    .button{
-        padding: 1.5rem 2.2rem;
-        font: normal 500 16px/20px var(--roboto);
-        position: relative;
-        border: 2px solid #854fee;
-        border-radius: 4px;
-    }
-    .button.primary-button{
-        background: var(--gradient-color);
-        background-clip: padding-box;
-        color: whitesmoke;
-        transition: background .6s ease;
-        box-shadow: var(--box-shadow);
-    }
-    .button.primary-button:hover{
-        background:whitesmoke;
-        background-clip: padding-box;
-        color: black;
-    }
+.button{
+    padding: 1.5rem 2.2rem;
+    font: normal 500 18px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.button.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: var(--box-shadow);
+    border-radius: 50px;
+    border: 3px solid transparent;
+}
+
+.button.primary-button:hover{
+    background: var(--gradient-color-second);
+    background-clip: padding-box;
+    color: black;
+    border: 3px solid black;
+}
+
+.button.primary-button::after, .button-secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 50px;
+}
     .intro{
         padding-top: 2%;
         font: normal bold 50px/72px var(--roboto);

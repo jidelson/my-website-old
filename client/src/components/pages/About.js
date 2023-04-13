@@ -127,10 +127,11 @@ p.para{
 
 .button{
     padding: 1.5rem 2.2rem;
-    font: normal 500 16px/20px var(--roboto);
+    font: normal 500 18px/20px var(--roboto);
     position: relative;
     border: 3px solid transparent;
-    border-radius: 4px;
+    border-radius: 50px;
+    font-weight: bold;
 }
 
 .button.primary-button{
@@ -139,13 +140,25 @@ p.para{
     color: whitesmoke;
     transition: background .6s ease;
     box-shadow: var(--box-shadow);
-    border: 2px solid #854fee;
+    border-radius: 50px;
+    border: 3px solid transparent;
 }
 
 .button.primary-button:hover{
-    background:whitesmoke;
+    background: var(--gradient-color-second);
     background-clip: padding-box;
     color: black;
+    border: 3px solid black;
+}
+
+.button.primary-button::after, .button-secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 50px;
 }
 
 .expression{

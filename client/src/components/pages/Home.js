@@ -45,8 +45,8 @@ function Home() {
                             <h4 className="jobTitle text-uppercase">Full Stack Web Developer</h4>
                             <div className="site-buttons">
                                 <div className="d-flex flex-row">
-                                    <Link className="btn button primary-button mr-4 text-uppercase" to="/contact">Message Me</Link>
-                                    <Link className="btn button secondary-button text-uppercase" to="/resume">My Resume</Link>
+                                    <Link className="btn button primary-button text-uppercase" to="/contact">Message Me</Link>
+                                    <Link className="btn button primary-button text-uppercase" to="/resume" style={{marginLeft: "5%"}}>My Resume</Link>
                                 </div>
                             </div>
                         </div>
@@ -306,7 +306,7 @@ function Home() {
                                 <div className="text-center"> 
                                     <a 
                                         href="https://github.com/jidelson/RevatureProj2" 
-                                        className="btn button-proj primary-button mr-4 text-uppercase" 
+                                        className="btn button primary-button mr-4 text-uppercase" 
                                         role="button"
                                     >
                                         View
@@ -326,7 +326,7 @@ function Home() {
                                 <div className="text-center"> 
                                     <a 
                                         href="https://github.com/jidelson/RevatureProj1" 
-                                        className="btn button-proj primary-button mr-4 text-uppercase" 
+                                        className="btn button primary-button mr-4 text-uppercase" 
                                         role="button"
                                     >
                                         View
@@ -348,7 +348,7 @@ function Home() {
                                 <div className="text-center"> 
                                     <a 
                                         href="https://github.com/Lambda-School-Labs/village-book-builders-fe-b" 
-                                        className="btn button-proj primary-button mr-4 text-uppercase" 
+                                        className="btn button primary-button mr-4 text-uppercase" 
                                         role="button"
                                     >
                                         View
@@ -368,7 +368,7 @@ function Home() {
                                 <div className="py-4">
                                     <a 
                                         href="https://github.com/bw-secret-family-recipes-4/Backend" 
-                                        className="btn button-proj primary-button mr-4 text-uppercase" 
+                                        className="btn button primary-button mr-4 text-uppercase" 
                                         role="button"
                                     >
                                         View
@@ -389,7 +389,7 @@ function Home() {
                                 <div className="py-4">
                                     <a 
                                         href="https://github.com/secret-family-recipes-bwft/front-end" 
-                                        className="btn button-proj primary-button mr-4 text-uppercase" 
+                                        className="btn button primary-button mr-4 text-uppercase" 
                                         role="button"
                                     >
                                         View
@@ -434,10 +434,11 @@ p.para{
 
 .button{
     padding: 1.5rem 2.2rem;
-    font: normal 500 16px/20px var(--roboto);
+    font: normal 500 18px/20px var(--roboto);
     position: relative;
     border: 3px solid transparent;
-    border-radius: 4px;
+    border-radius: 50px;
+    font-weight: bold;
 }
 
 .button.primary-button{
@@ -446,12 +447,15 @@ p.para{
     color: whitesmoke;
     transition: background .6s ease;
     box-shadow: var(--box-shadow);
+    border-radius: 50px;
+    border: 3px solid transparent;
 }
 
 .button.primary-button:hover{
-    background:whitesmoke;
+    background: var(--gradient-color-second);
     background-clip: padding-box;
     color: black;
+    border: 3px solid black;
 }
 
 .button.primary-button::after, .button-secondary-button::after{
@@ -461,21 +465,10 @@ p.para{
     background: var(--gradient-color);
     content: '';
     z-index: -1;
-    border-radius: 4px;
+    border-radius: 50px;
 }
 
-.button.secondary-button{
-    background: white;
-    background-clip: padding-box;
-    transition: background .6s ease;
-    border: 2px solid #854fee;
-}
 
-.button.secondary-button:hover{
-    background: var(--gradient-color);
-    color: whitesmoke;
-    box-shadow: var(--box-shadow);
-}
 
 .skills-title h1{
     font-size: 35px;

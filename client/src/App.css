@@ -1,15 +1,39 @@
 :root {
+  
   --mainDark: #343a40;
   --mainGrey: rgba(109, 109, 109);
   --mainLightGrey: rgba(172, 172, 172);
   --mainWhite: #fff;
   --mainBlue: #007bff;
 
-  --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+  /* --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%); */
+  
+  --gradient-color: linear-gradient(90deg, rgb(44, 126, 194) 0%, #171f97 100%);
+  --gradient-color-second: linear-gradient(90deg, rgb(55, 218, 182) 0%, rgb(24, 131, 108) 100%);
   --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 
   --roboto: 'Roboto', serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .navbar{
   background-color: var(--mainDark);

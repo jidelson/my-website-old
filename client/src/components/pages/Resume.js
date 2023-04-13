@@ -6,14 +6,15 @@ function Resume() {
     return (
         <ResumeContainer className="text-center">
             <div className="rezDlBtn">
-                <a href={resume} download className="btn button primary-button text-uppercase">Download Resume</a>
+                <a href={resume} download className="btn button primary-button text-uppercase " style={{marginTop: "1%", marginBottom: "1%"}}>Download Resume</a>
             </div>
             <div className="pdf-container" 
                 style={{ 
                     position: 'relative', 
                     width: '100vh', 
                     height: '100vh', // Sets the height to full viewport height
-                    border: '5px solid black'
+                    border: '5px solid black',
+                    marginBottom: "1%"
             }}>
                 <iframe
                     title='resume' 
@@ -36,10 +37,11 @@ const ResumeContainer = styled.div`
 
 .button{
     padding: 1.5rem 2.2rem;
-    font: normal 500 16px/20px var(--roboto);
+    font: normal 500 18px/20px var(--roboto);
     position: relative;
     border: 3px solid transparent;
-    border-radius: 4px;
+    border-radius: 50px;
+    font-weight: bold;
 }
 
 .button.primary-button{
@@ -48,12 +50,25 @@ const ResumeContainer = styled.div`
     color: whitesmoke;
     transition: background .6s ease;
     box-shadow: var(--box-shadow);
+    border-radius: 50px;
+    border: 3px solid transparent;
 }
 
 .button.primary-button:hover{
-    background:whitesmoke;
+    background: var(--gradient-color-second);
     background-clip: padding-box;
     color: black;
+    border: 3px solid black;
+}
+
+.button.primary-button::after, .button-secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 50px;
 }
 
 .pdf-container {
