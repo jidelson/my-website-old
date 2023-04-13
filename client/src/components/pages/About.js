@@ -55,15 +55,15 @@ function About() {
                             to fully rendered 3D animations. 
                         </p>    
                         <p className="para pt-2">
-                            I learned my development skills through Lambda School (now called Bloom Institute of Technology), a nine month intensive boot-camp style school, where I was 
-                            taught the most contemporary techniques and skills for web development. Lambda School constantly updates its curriculum based on what tools and techniques 
-                            are currently being used in the industry.     
+                            I learned my development skills through Lambda School (now called Bloom Institute of Technology), a nine month intensive boot-camp style 
+                            school, where I was taught the most contemporary techniques and skills for web development. Lambda School constantly updates its 
+                            curriculum based on what tools and techniques are currently being used in the industry.     
                         </p>
                         <p className="para pt-2">
-                               The curriculum at Lambda included learning through lectures and assignments and then
-                               completing weekly sprints. There were also group projects where projects would be planned and completed. Students would also interact with stakeholders to
-                               gain more experience of a professional working environment. While attending Lambda School I was also able to be a mentor to students in earlier units of 
-                               the curriculum.
+                            The curriculum at Lambda included learning through lectures and assignments and then
+                            completing weekly sprints. There were also group projects where the projects would be planned and completed. Students would also interact 
+                            with stakeholders to gain more experience of a professional working environment. While attending Lambda School I was also able to be a 
+                            mentor to students in earlier units of the curriculum.
                         </p>
                         <p className="para pt-2">
                             Below you can see my badge of completion for the Lambda School curriculum and some of what it entailed.
@@ -88,18 +88,19 @@ function About() {
                             </a>
                         </div>
                         <p className='para pt-5'>
-                            After completing the Lambda program, I worked and received additional training through a company called Revature. While working at Revature I was trained 
-                            in a number of technologies, programming languages, and frameworks including Java, Maven, SQL, Git, AWS, JDBC, HTML, CSS, JavaScript, HTTP, Servlets, 
-                            REST, Hibernate, Angular, Spring, DevOps, and Microservices.
+                            After completing the Lambda program, I worked and received additional training through a company called Revature. While working at 
+                            Revature I was trained in a number of technologies, programming languages, and frameworks including Java, Maven, SQL, Git, AWS, JDBC, 
+                            HTML, CSS, JavaScript, HTTP, Servlets, REST, Hibernate, Angular, Spring, DevOps, and Microservices.
                         </p>
                         <p className='para pt-2'>
-                            During my time at Revature I was trained by attending lectures, completing projects, working on coding challenges, mock interviews, and other interactive exercises.
-                            Projects were done individually, in small groups, as well as large groups of about 25 developers. 
+                            During my time at Revature I was trained by attending lectures, completing projects, working on coding challenges, mock interviews, and 
+                            other interactive exercises. Projects were done individually, in small groups, as well as large groups of about 25 developers. 
                         </p>
                         <p className='para pt-2'>
-                            After Revature, I was hired at Infosys where I currently work since December of 2021. At Infosys I started off by getting more trained by taking courses on subjects
-                            such as Java, Spring, Microservices, React, Cloud Computing, multiple AWS courses, and DevOps. After training I have been a part of a client project working primarily 
-                            as a Database Administrator. More details regarding this project can be viewed on my resume.
+                            After Revature, I was hired at Infosys where I currently work since December of 2021. At Infosys I started off by getting more trained by 
+                            taking courses on subjects such as Java, Spring, Microservices, React, Cloud Computing, multiple AWS courses, and DevOps. After training 
+                            I have been a part of a client project working primarily as a Database Administrator. More details regarding this project can be viewed on 
+                            my resume.
                         </p>
                     </div>
                     <div className='col-md-4 mt-5'>
