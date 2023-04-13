@@ -34,18 +34,7 @@ function Contact() {
         setFormValues(initalValues);
     }
 
-    // function sendEmail(e){
-    //     e.preventDefault();
 
-    //     // sends the email
-    //     emailjs.sendForm('service_rgh658x', 'template_jk0ogmk', e.target, 'user_5siGv8EVrjS5Pxk1dMwDw')
-    //       .then((result) => {
-    //           console.log(result.text);
-    //       }, (error) => {
-    //           console.log(error.text);
-    //       });
-    //     e.target.reset();
-    // }
     
     const fieldDisplayNames = {
         fName: "First Name",
@@ -60,8 +49,9 @@ function Contact() {
         lName: /^[a-zA-Z]+$/,
         email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
         subject: /^.+$/,
-        msg: /^[\w\s\d.,!?@#$%^&*()_+-={}|[\]\\:;"'<>,./~`]+$/ 
-    }
+        msg: /^.+$/ 
+      }
+      
     const validateField = (fieldName, value) => {
         const isValid = regex[fieldName].test(value);
         setFormValues((prevState) => ({...prevState, [fieldName]: value}));
@@ -89,17 +79,17 @@ function Contact() {
         setIsFormValid(isValid);
       };
       
-    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormValues((prevState) => ({...prevState, [name]: value}));
+        if (value.length === 1) {
+          setFormErrors((prevState) => ({...prevState, [name]: ''}));
+        } else {
+          validateForm(name);
+        }
+      };
       
-    
-    
-const handleChange = (e) => {
-  const { name, value } = e.target;
-  validateField(name, value);
-  validateForm(name);
-};
 
-    
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!isFormValid) {
@@ -231,3 +221,22 @@ const ContactContainer = styled.div`
         color: red;
     }
 `;
+
+
+
+
+
+
+
+    // function sendEmail(e){
+    //     e.preventDefault();
+
+    //     // sends the email
+    //     emailjs.sendForm('service_rgh658x', 'template_jk0ogmk', e.target, 'user_5siGv8EVrjS5Pxk1dMwDw')
+    //       .then((result) => {
+    //           console.log(result.text);
+    //       }, (error) => {
+    //           console.log(error.text);
+    //       });
+    //     e.target.reset();
+    // }

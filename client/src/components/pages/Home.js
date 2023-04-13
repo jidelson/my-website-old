@@ -84,7 +84,8 @@ function Home() {
                             </p>
                             <p className='para'>
                                 Currently, I am employed at Infosys and have gained new skills working primarily as a database administrator.
-                                When I am not working, I enjoy spending time with family and friends, and working on digital art projects.
+                                When I am not working, I enjoy spending time with family and friends, watching sports like basketball and baseball, and working on 
+                                digital art projects.
                             </p>
                         </div>
                     </div>
