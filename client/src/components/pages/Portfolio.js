@@ -133,6 +133,7 @@ const PortfolioContainer = styled.div`
     background-clip: padding-box;
     color: black;
     border: 3px solid black;
+    box-shadow: 0 0 10px rgb(65, 228, 152), 0 0 20px rgb(65, 228, 152), 0 0 30px rgb(65, 228, 152), 0 0 40px rgb(65, 228, 152);
 }
 
 .button.primary-button::after, .button-secondary-button::after{

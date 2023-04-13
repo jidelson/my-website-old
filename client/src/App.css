@@ -5,8 +5,6 @@
   --mainLightGrey: rgba(172, 172, 172);
   --mainWhite: #fff;
   --mainBlue: #007bff;
-
-  /* --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%); */
   
   --gradient-color: linear-gradient(90deg, rgb(44, 126, 194) 0%, #171f97 100%);
   --gradient-color-second: linear-gradient(90deg, rgb(55, 218, 182) 0%, rgb(24, 131, 108) 100%);
@@ -14,26 +12,6 @@
 
   --roboto: 'Roboto', serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .navbar{
   background-color: var(--mainDark);
@@ -47,9 +25,6 @@
 .navbar-toggler{
   border: none;
 }
-
-
-
 
 @media (max-width: 390px){
   .name{
