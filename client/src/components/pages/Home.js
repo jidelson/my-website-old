@@ -541,6 +541,10 @@ p.para{
     width: 50%;
 }
 
-`
+.grid .our-project .img:hover{
+    filter: brightness(1.1) drop-shadow(1px 8px 14px #b1afaf);
+}
+
+`;
 
  

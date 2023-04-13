@@ -7,7 +7,6 @@ import cookbook2 from '../../images/cookbook2.png';
 import dollar from '../../images/dollar.jpg';
 import flashcards from '../../images/flashcards.jpg';
 
-
 function Portfolio() {
     return (
         <PortfolioContainer className="container">
@@ -50,7 +49,6 @@ function Portfolio() {
                 </div>
                 
             </div>
-
 
             <div className="projectRow row grid">
                 <div className="col-lg-4 col-md-6 col-sm-12  py-4">
@@ -95,14 +93,6 @@ function Portfolio() {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
             </div>
         </PortfolioContainer>
     )
