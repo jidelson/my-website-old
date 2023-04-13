@@ -6,7 +6,7 @@ function Resume() {
     return (
         <ResumeContainer className="text-center">
             <div className="rezDlBtn">
-                <a href={resume} download className="btn button primary-button text-uppercase " style={{marginTop: "1%", marginBottom: "1%"}}>Download Resume</a>
+                <a href={resume} download className="btn button primary-button text-uppercase " style={{marginTop: "1.5%", marginBottom: "1.5%"}}>Download Resume</a>
             </div>
             <div className="pdf-container" 
                 style={{ 
@@ -24,8 +24,6 @@ function Resume() {
                 >
                 </iframe>
             </div>
-               
-            
         </ResumeContainer>
     )    
 
