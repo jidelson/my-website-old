@@ -296,7 +296,7 @@ function Home() {
                         <div className="col-lg-4 col-md-12 col-sm-12">
                             <div className="our-project text-center">
                                 <div className="img py-4">
-                                    <img className="proj-img" src={flashcards} alt="Flashcard App" />
+                                    <img className="proj-img" src={flashcards} alt="Flashcard App" style={{maxWidth: "30%"}} />
                                 </div>
                                 <div className="title py-4 text-center">
                                         <h4 className="text-uppercase">Flashcard App</h4>
@@ -316,7 +316,7 @@ function Home() {
                         <div className="col-lg-4 col-md-12 col-sm-12">
                             <div className="our-project text-center">
                                 <div className="img py-4">
-                                    <img className="proj-img" src={dollar} alt="Employee Reimbursement System" />
+                                    <img className="proj-img" src={dollar} alt="Employee Reimbursement System" style={{maxWidth: "30%"}} />
                                 </div>
                                 <div className="title py-4 text-center">
                                         <h4 className="text-uppercase">Employee Reimbursement System</h4>
@@ -338,7 +338,7 @@ function Home() {
                         <div className="projectOne col-lg-4 col-md-12 col-sm-12">
                             <div className="our-project text-center">
                                 <div className="img py-4">
-                                    <img className="proj-img" src={vbb} alt="portfolio-1" />
+                                    <img className="proj-img" src={vbb} alt="portfolio-1" style={{maxWidth: "30%"}} />
                                 </div>
                                 <div className="title py-4 text-center">
                                         <h4 className="text-uppercase">Village Book Builder</h4>
@@ -358,7 +358,7 @@ function Home() {
                         <div className="projectTwo col-lg-4 col-md-12 col-sm-12">
                             <div className="our-project text-center">
                                 <div className="img py-4">
-                                    <img className="proj-img" src={cookbook} alt="portfolio-1" />
+                                    <img className="proj-img" src={cookbook} alt="portfolio-1" style={{maxWidth: "30%"}} />
                                 </div>
                                 <div className="title py-4 text-center">
                                         <h4 className="text-uppercase">Secret Family Recipes</h4>
@@ -379,7 +379,7 @@ function Home() {
                         <div className="projectTwo col-lg-4 col-md-12 col-sm-12">
                             <div className="our-project text-center">
                                 <div className="img py-4">
-                                    <img className="proj-img" src={cookbook2} alt="portfolio-1" />
+                                    <img className="proj-img" src={cookbook2} alt="portfolio-1" style={{maxWidth: "30%"}} />
                                 </div>
                                 <div className="title py-4 text-center">
                                         <h4 className="text-uppercase">Secret Family Recipes</h4>

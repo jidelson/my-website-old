@@ -130,4 +130,4 @@ const PortfolioContainer = styled.div`
     background-clip: padding-box;
     color: black;
 }
-`
+`;
