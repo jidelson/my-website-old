@@ -12,7 +12,6 @@ import python from '../../images/python.png';
 import redux from '../../images/redux.png';
 import node from '../../images/node.png';
 import express from '../../images/express.png';
-import sql from '../../images/sql.png';
 import git from '../../images/git.png';
 import heroku from '../../images/heroku.jpg';
 import postgresql from '../../images/postgresql.png';
@@ -249,16 +248,6 @@ function Home() {
                                 </div>
                                 <div className="card-body text-center">
                                     <h4 className="card-title font-roboto">MySQL</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12">
-                            <div className="skills">
-                                <div className="skills-img text-center-py-4">
-                                    <img src={sql} alt="SQL" className="rounded mx-auto d-block img-fluid" />
-                                </div>
-                                <div className="card-body text-center">
-                                    <h4 className="card-title font-roboto">SQL</h4>
                                 </div>
                             </div>
                         </div>
