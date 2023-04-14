@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import cartoon from '../../images/cartoon.png';
-import about from '../../images/about.png';
+import logo from '../../images/logo.png';
 
 import html from '../../images/html.png';
 import css from '../../images/css.png';
@@ -61,7 +61,7 @@ function Home() {
                 <div className="aboutRow row">
                     <div className="col-lg-4 col-md-12">
                         <div>
-                            <img src={about} alt="About me" className="about-image img-fluid" />
+                            <img src={logo} alt="logo" className="about-image img-fluid" />
                         </div>
                     </div>
 
