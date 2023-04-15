@@ -36,10 +36,10 @@ function Home() {
     return (
 
         <HomeContainer className="main-home">
-            <div className="home-top py-4">
+            <div className="home-top py-4" style={{display: "flex", alignItems: "center"}}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-6 col-md-12 site-title">
+                        <div className="col-lg-6 col-md-12">
                             <h3 className="intro">Hey there! I am</h3>
                             <h1 className="name text-uppercase">Joe Idelson</h1>
                             <h4 className="jobTitle text-uppercase">Full Stack Web Developer</h4>
@@ -50,7 +50,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-12 banner-image">
+                        <div className="col-lg-6 col-md-12" style={{ width: '40%', marginLeft: '10%'}}>
                             <img src={cartoon} alt="cartoon-img" className="cartoon-image img-fluid" />
                         </div>
                     </div>
@@ -61,7 +61,7 @@ function Home() {
                 <div className="aboutRow row">
                     <div className="col-lg-4 col-md-12">
                         <div>
-                            <img src={logo} alt="logo" className="about-image img-fluid" />
+                            <img src={logo} alt="logo" className="about-image img-fluid" style={{marginBottom: '20%'}}/>
                         </div>
                     </div>
 
@@ -287,7 +287,7 @@ function Home() {
 
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-lg-12 text-center skills-title">
+                    <div className="col-lg-12 text-center skills-title" style={{marginTop: '9%'}}>
                         <h1 className="text-uppercase title-text">Projects</h1> 
                     </div>
                 </div>

@@ -9,7 +9,7 @@ function Navbar() {
     <NavContainer>
       <nav className="navbar navbar-expand-lg">
         <Link to="/" className="navbar-brand">
-          <img src={logo} alt="logo" style={{ width: "45px", marginLeft: "40%"}} />
+          <img src={logo} alt="logo" style={{ width: "80px", marginLeft: "40%"}} />
         </Link>
         <button 
           className="navbar-toggler" 
