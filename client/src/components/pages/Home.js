@@ -23,9 +23,6 @@ import github from '../../images/github.png';
 import spring from '../../images/spring.png';
 import angular from '../../images/angular.png';
 
-import vbb from '../../images/vbb.png';
-import cookbook from '../../images/cookbook.jpg';
-import cookbook2 from '../../images/cookbook2.png';
 import dollar from '../../images/dollar.jpg';
 import flashcards from '../../images/flashcards.jpg';
 
@@ -335,69 +332,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="row grid">
-                        <div className="projectOne col-lg-4 col-md-12 col-sm-12">
-                            <div className="our-project text-center">
-                                <div className="img py-4">
-                                    <img className="proj-img" src={vbb} alt="portfolio-1" style={{maxWidth: "30%"}} />
-                                </div>
-                                <div className="title py-4 text-center">
-                                        <h4 className="text-uppercase">Village Book Builder</h4>
-                                        <span className="text-secondary">Front End Developer</span>
-                                </div>
-                                <div className="text-center"> 
-                                    <a 
-                                        href="https://github.com/Lambda-School-Labs/village-book-builders-fe-b" 
-                                        className="btn button primary-button mr-4 text-uppercase" 
-                                        role="button"
-                                    >
-                                        View
-                                    </a>  
-                                </div>
-                            </div>
-                        </div>
-                        <div className="projectTwo col-lg-4 col-md-12 col-sm-12">
-                            <div className="our-project text-center">
-                                <div className="img py-4">
-                                    <img className="proj-img" src={cookbook} alt="portfolio-1" style={{maxWidth: "30%"}} />
-                                </div>
-                                <div className="title py-4 text-center">
-                                        <h4 className="text-uppercase">Secret Family Recipes</h4>
-                                        <span className="text-secondary">Back End Developer</span>
-                                </div>
-                                <div className="py-4">
-                                    <a 
-                                        href="https://github.com/bw-secret-family-recipes-4/Backend" 
-                                        className="btn button primary-button mr-4 text-uppercase" 
-                                        role="button"
-                                    >
-                                        View
-                                    </a>  
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="projectTwo col-lg-4 col-md-12 col-sm-12">
-                            <div className="our-project text-center">
-                                <div className="img py-4">
-                                    <img className="proj-img" src={cookbook2} alt="portfolio-1" style={{maxWidth: "30%"}} />
-                                </div>
-                                <div className="title py-4 text-center">
-                                        <h4 className="text-uppercase">Secret Family Recipes</h4>
-                                        <span className="text-secondary">Front End Developer</span>
-                                </div>
-                                <div className="py-4">
-                                    <a 
-                                        href="https://github.com/secret-family-recipes-bwft/front-end" 
-                                        className="btn button primary-button mr-4 text-uppercase" 
-                                        role="button"
-                                    >
-                                        View
-                                    </a>                         
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </HomeContainer>
