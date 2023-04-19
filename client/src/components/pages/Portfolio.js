@@ -7,14 +7,14 @@ import flashcards from '../../images/flashcards.jpg';
 function Portfolio() {
     return (
         <PortfolioContainer className="container">
-            <div className="project-title pb-5">
+            <div className="project-title pb-5" style={{marginTop: "5%"}}>
                 <h1 className="text-uppercase title-h1 text-center">Projects</h1>
             </div>
             <div className="text-center">
                 <h5>Check out my <a href="https://www.github.com/jidelson">GitHub</a> to see my most recent work!</h5>
             </div>
 
-            <div className='projectRow row grid justify-content-center'>
+            <div className='projectRow row grid justify-content-center' style={{marginBottom: "5%"}}>
                 <div className="col-lg-4 col-md-6 col-sm-12  py-4">
                     <div className='our-project text-center'>
                         <div className='img'>
