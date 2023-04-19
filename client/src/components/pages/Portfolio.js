@@ -14,7 +14,7 @@ function Portfolio() {
                 <h5>Check out my <a href="https://www.github.com/jidelson">GitHub</a> to see my most recent work!</h5>
             </div>
 
-            <div className='projectRow row grid'>
+            <div className='projectRow row grid justify-content-center'>
                 <div className="col-lg-4 col-md-6 col-sm-12  py-4">
                     <div className='our-project text-center'>
                         <div className='img'>

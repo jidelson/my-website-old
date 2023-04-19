@@ -68,7 +68,7 @@ function Home() {
                         </h2>
                         <div className="paragraph py-4">
                             <p className="para">
-                                Hey there! I'm Joe Idelson, a full stack web developer.
+                                Hi there! I'm Joe Idelson, a full stack web developer.
                                 I am originally from the San Francisco Bay Area, and now reside in the Dallas-Fort Worth Metroplex. Prior to learning coding, I recieved my Bachelor's in 
                                 Applied Science for Animation and Visual Effects.
                                 I am hard working and passionate about my work and always looking for ways to improve myself and my skills. I enjoy solving new problems and finding solutions
@@ -290,7 +290,7 @@ function Home() {
                 </div>
             
                 <div className="container-fluid">
-                    <div className="row grid">
+                    <div className="row grid justify-content-center" style={{marginBottom: "5%"}}>
                         <div className="col-lg-4 col-md-12 col-sm-12">
                             <div className="our-project text-center">
                                 <div className="img py-4">

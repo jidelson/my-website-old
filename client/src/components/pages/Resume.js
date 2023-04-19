@@ -18,7 +18,7 @@ function Resume() {
             }}>
                 <iframe
                     title='resume' 
-                    src="https://drive.google.com/file/d/17F7QoJLItDouYDLbZDfQROixhDqa5TrY/preview" 
+                    src="https://drive.google.com/file/d/1r0O97KOovc0EhBuJG2m8N4IR_3AtsGdv/preview" 
                     width="100%" 
                     height="100%" 
                 >
