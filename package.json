@@ -33,5 +33,14 @@
   "engines": {
     "node": "16.x",
     "npm": "9.x"
-  }
+  },
+  "files": [
+    "node_modules/",
+    "package-lock.json",
+    "package.json",
+    "Procfile",
+    "server.js",
+    "/build"
+  ]
+  
 }
