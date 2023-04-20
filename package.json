@@ -40,7 +40,7 @@
     "package.json",
     "Procfile",
     "server.js",
-    "/build"
+    "index.js"
   ]
   
 }
