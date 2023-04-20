@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node server.js",
     "build": "cd client && npm run build && mv build ../"
   },
   "repository": {
@@ -22,6 +22,7 @@
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0"
